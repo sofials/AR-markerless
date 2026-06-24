@@ -1,0 +1,15 @@
+# Piramide a base quadrata, per test parser OBJ
+# Vertici: 4 alla base (z=0) + 1 apice (z negativo, verso la camera)
+v -0.5 -0.5 0.0
+v  0.5 -0.5 0.0
+v  0.5  0.5 0.0
+v -0.5  0.5 0.0
+v  0.0  0.0 -1.0
+
+# Facce: base (1 quad = 2 triangoli) + 4 lati triangolari
+f 1 2 3
+f 1 3 4
+f 1 2 5
+f 2 3 5
+f 3 4 5
+f 4 1 5
